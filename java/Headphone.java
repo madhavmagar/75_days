@@ -4,35 +4,35 @@ public class Headphone {
     String[] controls = {"power", "volume", "skip", "play/pause"};
     String color = "red";
     
-    static boolean power = false;
+    boolean power = false;
     
-    public static void powerOn() {
+    public void powerOn() {
         power = true;
     }
     
-    public static void powerOff() {
+    public void powerOff() {
         power = false;
     }
     
     static int volume = 0;
     
-    public static void volumeUp() {
+    public void volumeUp() {
         volume++;
         System.out.println(volume);
     }
     
-    public static void volumeDown() {
+    public void volumeDown() {
         volume--;
         System.out.println(volume);
     }
     
     static boolean play = false;
     
-    public static void play() {
+    public void play() {
         play = true;
     }
     
-    public static void pause() {
+    public void pause() {
         play = false;
     }
 }
